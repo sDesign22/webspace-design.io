@@ -1,0 +1,136 @@
+    /**************************** Design-Links ****************************/
+    nav {
+    	background: repeating-linear-gradient(25deg, transparent, white 25% 50%, blue, transparent 85%, silver);
+    	margin: auto;
+    	padding: 2% 2% 0;
+    	border: double;
+    	border-radius: 10%;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    	font-weight: bold;
+    }
+
+    nav>ul {
+    	display: flex;
+    	flex-direction: row;
+    	margin-top: 2.5%;
+    }
+
+    nav ul>li {
+        background: linear-gradient(25deg, white, silver);
+    	margin: auto;
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    }
+
+    nav:hover ul li,
+    nav:hover a {
+    	background: silver;
+    	color: blue;
+    	margin: auto;
+    	transition: .25s ease-in;
+    	border-color: silver;
+    }
+
+    nav ul>li:hover,
+    nav a:hover {
+    	background: linear-gradient(-100deg, silver 59.75%, transparent);
+    	color: green;
+    	border-color: white;
+    	border-radius: 8px;
+    }
+
+    nav li>a {
+    	color: unset;
+    	margin: auto;
+    	text-decoration: none;
+
+    }
+
+    nav > a {
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	text-decoration: none;
+    	transition: .2s ease-in;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+        background: conic-gradient(from 82deg, blue, transparent 50%, black , transparent 70%);
+        border: thick outset;
+    }
+
+    main img {
+        float:right;
+        margin: 4% 4.5% 1%;
+        padding: 1% 2%;
+        border: thick outset blue ;
+        border-radius: 10px;
+        box-shadow: -2px 5px 8px 5px blue;
+    }
+
+    /******************************** ** Main - Section ** ***************************************/
+    main p {
+        overflow: auto;
+        margin: 5% 2.5%;
+        padding: 15% 4%;
+        border-top: 1em groove ;
+        border-bottom: 1em groove ;
+        border-left: thick outset blue ;
+        border-radius: 10%;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    .section2 {
+        background: repeating-linear-gradient(-80deg, white 10%, transparent, silver, transparent 25%);
+        background-size: 20%;
+        margin: 2%;
+        padding: 2%;
+        border-radius: 10px;
+    }
+
+    .section2 h3 {
+        background: conic-gradient(white, transparent 50%, black , transparent 70%);
+        margin: 10% 20%;
+        padding: 2%;
+        border: groove;
+        border-radius: 10%;
+        font-size: 1.8em;
+        font-family: monospace;
+    }
+    .section2 h4 {
+        background: linear-gradient(to top left, white, transparent 50%, black, transparent);
+        margin: 4% 28% 1%;
+        padding: 2% 1%;
+        border: groove;
+        border-radius: 10%;
+        font-size: 1.4em;
+        font-family: monospace;
+    }
+    .section2 p {
+        background: linear-gradient(to bottom right, white 50%, transparent);
+        margin: 1% 10%;
+        padding: 2%;
+        border-right: thick outset blue;
+    }
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+        width: 90%;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+        margin: 2% auto;
+        padding: 2% 0;
+        border: .5em ridge;
+        border-radius: 50%;
+    }
+
+    footer p {
+        background-color: white;
+        padding: 2%;
+        line-height: 1.5;
+    }
