@@ -1,0 +1,143 @@
+    /**************************** Design-Links ****************************/
+    nav {
+    	background: repeating-linear-gradient(25deg, transparent, white 25% 50%, blue, transparent 85%, silver);
+    	margin: auto;
+    	padding: 2% 2% 0;
+    	border: double;
+    	border-radius: 10%;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+    	font-weight: bold;
+    }
+
+    nav>ul {
+    	display: flex;
+    	flex-direction: row;
+    	margin-top: 2.5%;
+    }
+
+    nav ul>li {
+        background: linear-gradient(25deg, white, silver);
+    	margin: auto;
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    }
+
+    nav:hover ul li,
+    nav:hover a {
+    	background: silver;
+    	color: blue;
+    	margin: auto;
+    	transition: .25s ease-in;
+    	border-color: silver;
+    }
+
+    nav ul>li:hover,
+    nav a:hover {
+    	background: linear-gradient(-100deg, silver 59.75%, transparent);
+    	color: green;
+    	border-color: white;
+    	border-radius: 8px;
+    }
+
+    nav li>a {
+    	text-decoration: none;
+    	margin: auto;
+    	color: unset;
+
+    }
+
+    nav > a {
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    	text-decoration: none;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+        border: thick outset;
+        margin: 1% .5%;
+        background: conic-gradient(from 82deg, blue, transparent 50%, black , transparent 70%);
+    }
+
+    /**************************** * Main - Form ****************************/
+    /**************************** * Main - Text-Content ****************************/
+    form {
+        background: linear-gradient(25deg, silver, transparent, white);
+        margin: 4%;
+        padding: 2%;
+        border: 1em double;
+        border-radius: 5px;
+        box-shadow: 20px 20px 20px -2px silver;
+    }
+
+    legend {
+    	color: white;
+    	background: linear-gradient(to top left, transparent, black, white);
+    	margin: 2% auto;
+    	padding: 1% 10%;
+    	border: thin ridge;
+    	border-bottom: .2em solid blue;
+    	border-right: .25em solid blue;
+    	border-radius: 10%;
+    	box-shadow: 2px -4px 1px 5px;
+    	font-size: 1.8em;
+    }
+
+    fieldset {
+        font-size: 1.25em;
+        background: linear-gradient(to bottom right, white, silver 10% 70%, transparent 80%, white 85%);
+        margin: -1% 4%;
+        padding: 5%;
+        border-radius: 2px;
+    }
+
+    .form-input {
+        width: 58%;
+        margin: 2% auto;
+        padding: 4%;
+        outline: .2em double;
+    }
+
+    #text1 img {
+        margin: 5% auto 1%;
+        padding: 2%;
+        border-right: double;
+        border-left: double;
+        border-bottom: thin groove;
+    }
+
+    #text1 ul {
+        width: 40%;
+        color: silver;
+        margin: 1% auto;
+    }
+
+
+    #text1 li:hover {
+        transform: scale(1.2);
+        border-radius: 40%;
+        transition: 1s;
+    }
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+        width: 90%;
+        margin: 2% auto;
+        padding: 2% 0;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+        border: .5em ridge;
+        border-radius: 50%;
+    }
+
+    footer p {
+        background-color: white;
+        padding: 2%;
+        line-height: 1.5;
+    }

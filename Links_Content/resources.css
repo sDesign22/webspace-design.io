@@ -1,0 +1,86 @@
+    /**************************** Design-Links ****************************/
+    nav {
+    	background: repeating-linear-gradient(25deg, transparent, white 25% 50%, blue, transparent 85%, silver);
+    	margin: auto;
+    	padding: 2% 2% 0;
+    	border: double;
+    	border-radius: 10%;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+    	font-weight: bold;
+    }
+
+    nav>ul {
+    	display: flex;
+    	flex-direction: row;
+    	margin-top: 2.5%;
+    }
+
+    nav ul>li {
+        background: linear-gradient(25deg, white, silver);
+    	margin: auto;
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    }
+
+    nav:hover ul li,
+    nav:hover a {
+    	background: silver;
+    	color: blue;
+    	margin: auto;
+    	transition: .25s ease-in;
+    	border-color: silver;
+    }
+
+    nav ul>li:hover,
+    nav a:hover {
+    	background: linear-gradient(-100deg, silver 59.75%, transparent);
+    	color: green;
+    	border-color: white;
+    	border-radius: 8px;
+    }
+
+    nav li>a {
+    	text-decoration: none;
+    	margin: auto;
+    	color: unset;
+
+    }
+
+    nav > a {
+    	padding: 1% 4%;
+    	border: .2em ridge black;
+    	border-radius: 4%;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    	text-decoration: none;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+        border: thick outset;
+        margin: 1% .5%;
+        background: conic-gradient(from 82deg, blue, transparent 50%, black , transparent 70%);
+    }
+
+    /**************************** * Main - Text-Content ****************************/
+
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+        width: 90%;
+        margin: 2% auto;
+        padding: 2% 0;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+        border: .5em ridge;
+        border-radius: 50%;
+    }
+
+    footer p {
+        background-color: white;
+        padding: 2%;
+        line-height: 1.5;
+    }
