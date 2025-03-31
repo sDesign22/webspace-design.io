@@ -1,0 +1,343 @@
+    /**************************** Design-Links ****************************/
+    nav>ul>li {
+        background: linear-gradient(blue 50%, silver);
+        color: white;
+        margin: 0% auto 0;
+        padding: .75% 2.8%;
+        border: groove black;
+        border-radius: 4px;
+        font-size: .85em;
+        font-family: cursive;
+        transition: .25s ease;
+    }
+
+    nav ul li:hover {
+        color: unset;
+        box-shadow: unset;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        transform: scale(1.1);
+    }
+
+    nav li>a {
+        color: unset;
+        text-decoration: none;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+        position: relative;
+        border: inset;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 25% 14% 2%;
+    }
+
+    #design-image {
+        order:3;
+        align-self: flex-start;
+        width: 8%;
+        background: linear-gradient(-50deg, silver, transparent);
+        margin: 2% -20%;
+        border: 1em solid gold;
+        border-radius: 25%;
+        border-left: unset;
+        transition: all .5s, width 1s;
+    }
+
+    #design-image p,
+    #design-image img {
+        display: none;
+        margin: 1% auto;
+    }
+
+    #design-image img {
+        padding: 2%;
+        border: solid;
+    }
+
+    #design-image:hover {
+        width: 90vw;
+        padding: 2%;
+        margin-bottom: 8%;
+        border-radius: 20px;
+        font-size: 110%;
+        font-family: 'Courier New', monospace;
+    }
+
+    #design-image:hover p,
+    #design-image:hover img {
+        display: block;
+    }
+
+    /**************************** * Main - Heading ****************************/
+    main h2 {
+        background: linear-gradient(blue, white);
+        color: gold;
+        margin: 5.75% 0% auto .5%;
+        padding: 1%;
+        border: 2px dashed;
+        font-size: 2.25em;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #content-header {
+        order: 2;
+        background: linear-gradient(10deg, transparent, silver, transparent);
+        margin: 1% 5%;
+        border: .25em inset;
+        border-radius: 20px;
+        font-size: 1.4em;
+    }
+
+    #content-header:hover {
+        background-color: blue;
+    }
+
+    /**************************** * Main - Menu-Links ****************************/
+    .menu {
+    	position: absolute;
+    	width: 62%;
+    	left: 18%;
+    	background: linear-gradient(white, black 20% 90%, white);
+    	padding: 1%;
+    	border: .5em groove black;
+    	border-radius: 25px;
+    	font-size: 1.2em;
+    	font-weight: bold;
+    	transition: .5s;
+    }
+
+    .menu>h3 {
+    	display: none;
+    }
+
+    #menu-links {
+    	margin: auto;
+    }
+
+    #menu-links li {
+    	float: left;
+    	background: linear-gradient(white 1%, silver);
+    	margin: auto 2.8%;
+    	padding: .5% 2.5%;
+    	border: outset black;
+    	border-radius: 25px;
+    }
+
+    #menu-links li:hover {
+    	background: green;
+    	font-size: 105%;
+    	transition: .5s ease;
+    }
+
+    #menu-links li a {
+    	color: black;
+    	text-decoration: none;
+    }
+
+    #menu-links li a:hover {
+    	color: white;
+    }
+
+    /**************************** * Main - Applet ****************************/
+    #applet {
+        order: 1;
+        background: cyan;
+        margin: auto -15%;
+        border: dashed gold;
+        border-radius: 80%;
+        box-shadow: 2px 4px 10px 5px ;
+    }
+
+    .tag {
+        position: absolute;
+        background: linear-gradient( silver 5% 10%, rgb(146, 169, 180) );
+        margin: 18% auto;
+        padding: 1% 5%;
+        border-radius: 1%;
+        box-shadow: 2px 2px;
+    }
+
+    .tag h4 {
+        color: white;
+        margin: auto -5%;
+        padding: 2%;
+        font-size: 1.5em;
+        transition: .4s;
+    }
+
+    #video-tag {
+        left: 3%;
+    }
+
+    #links-tag {
+        right: 3%;
+    }
+
+    #link-list,
+    #video-list {
+        display: none;
+        border: .75em dashed;
+        line-height: 2;
+    }
+
+    .tag:hover {
+        background: unset;
+        margin: 18% -2%;
+        padding: unset;
+        box-shadow: unset;
+    }
+
+    #video-tag:hover #video-list,
+    #links-tag:hover #link-list {
+        display: block;
+    }
+
+    #video-tag:hover h4,
+    #links-tag:hover h4 {
+        width: 70%;
+        background: linear-gradient(transparent 4%, black);
+        margin: 2%;
+        padding: 5% 1%;
+        font-size: 2em;
+    }
+
+    #links-tag:hover h4 {
+        margin-left: 25%;
+    }
+
+    .tag li {
+        background: white;
+        margin-left: -12%;
+        padding: .5%;
+    }
+
+    .tag li:hover {
+        background: linear-gradient(-20deg, silver 50%, transparent);
+        margin-left: -14%;
+        padding: 1%;
+        border: .2em outset;
+        font-weight: bold;
+        transition: .25s ease-out;
+    }
+
+    #content-object iframe {
+        width: 75%;
+        margin: 1%;
+        border: solid gold;
+        border-radius: 10px;
+    }
+
+    #content-nav ul {
+        width: 50%;
+        background: linear-gradient(10deg, silver 25%, grey);
+        color: silver;
+        margin: -2% auto;
+        padding: 2.5%;
+    }
+
+    #content-nav ul li {
+        float: left;
+        background: black;
+        padding: 1% 2%;
+        margin: -1.5% 5%;
+        border: .2em groove;
+        border-radius: 10px;
+        font-size: 1.2em;
+        transition: .5s;
+    }
+
+    #content-nav ul li:hover {
+        background: white;
+        color: black;
+        transform: scale(1.1);
+    }
+
+    /**************************** * Main - Text-Content ****************************/
+    #text1 {
+        order: 3;
+        background: linear-gradient(to top left, blue, transparent, black, transparent);
+        margin: -2% -12% 2%;
+        padding: 2% .5%;
+        border: .5em double;
+        border-radius: 45px;
+        box-shadow: 10px -10px 0 -2px;
+        font-size: 1.15em;
+        line-height: 1.4;
+    }
+
+    #text1 h3 {
+        margin-top: -5.5%;
+        font-size: 1.8em;
+    }
+
+    #text1 p {
+        background: white;
+        margin: 1% 10% -2%;
+        padding: 1%;
+        border-radius: 10px;
+        line-height: 1.5;
+    }
+
+    #text1 ul {
+        width: 50%;
+        background: silver;
+        margin: 2% auto 1%;
+    }
+
+    #text1 li {
+        background: linear-gradient(70deg, blue, transparent);
+        margin: auto 1%;
+        padding: 1% 10%;
+        outline: .2em groove;
+    }
+
+    #text1 li:hover {
+        font-size: 110%;
+    }
+
+    /**************************** * Main - Side-Element1 ****************************/
+    .aside1 {
+        position: absolute;
+        top: 8%;
+        right: .25%;
+        left: 0;
+        background: blue;
+        margin: 1% auto;
+        padding: 2%;
+        border: thin inset;
+        font-size: 1.2em;
+    }
+
+    .aside1 h3 {
+        margin: auto;
+    }
+
+    .aside1 p {
+        padding: 1% 1% 12%;
+        margin-bottom: -12%;
+        border-left: solid;
+        border-right: solid;
+        outline: thin dashed;
+        line-height: 1.25;
+    }
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+        width: 90%;
+        margin: 2% auto;
+        padding: 2% 0;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+        border: .5em ridge;
+        border-radius: 50%;
+    }
+
+    footer p {
+        background-color: white;
+        padding: 2%;
+        line-height: 1.5;
+    }

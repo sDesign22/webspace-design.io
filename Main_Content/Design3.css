@@ -1,0 +1,367 @@
+    /******************** HID **************************/
+    #content-header,
+    #applet,
+    #images1,
+    #images3 {
+        display: none;
+    }
+
+    /**************************** Design-Links ****************************/
+    nav>ul>li {
+        background: white;
+        margin: auto;
+        padding: .5% 2%;
+        border: .4em double;
+        border-radius: 8px;
+        transition: .5s;
+    }
+
+    nav ul li:hover {
+        background: black;
+        color: blue;
+        font-family: Tahoma, sans-serif;
+        box-shadow: unset;
+        transform: scale(1.05);
+    }
+
+    nav li>a {
+        color: unset;
+        text-decoration: none;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+        width: 95%;
+        border: .5em inset;
+    }
+
+    main h2 {
+        width: 80%;
+        margin: 5% auto 2%;
+        padding: 2.5%;
+        border-radius: 48%;
+        box-shadow: 12px -2px 2px 4px;
+        font-size: 1.8em;
+    }
+
+    .main {
+        background: silver;
+        margin: auto;
+        border-top: 1em solid;
+        border-right: 1em double;
+    }
+
+    #display-link {
+        float: right;
+        background: white;
+        margin: 2%;
+        padding: .5%;
+        border: outset;
+        box-shadow: 2px 4px 2px -1px;
+        text-decoration: none;
+    }
+
+    #display-link:hover {
+        background: red;
+        color: black;
+        font-style: oblique;
+        font-size: 105%;
+    }
+
+    /**************************** * Main - Menu-Links ****************************/
+    .menu {
+        position: absolute;
+        width: 15%;
+        left: 0;
+        background: white;
+        margin: 2.5% auto;
+        padding: 8.5% 1%;
+        border: .2em inset;
+        border-bottom: unset;
+        border-radius: 1%;
+    }
+
+    .menu:hover {
+        left: .75%;
+        transition: .75s;
+    }
+
+    .menu>h3 {
+        background: linear-gradient(45deg, silver 28%, black 40%);
+        color: white;
+        margin: 5% -11% 2% -15%;
+        padding: 1em;
+        border: .25em outset;
+        font-family: monospace;
+        font-size: 1.9em;
+    }
+
+    #menu-links {
+        background: silver;
+        margin-left: -20%;
+        border: .25em groove;
+        line-height: 1.85;
+        font-size: 1.4em;
+    }
+
+    #menu-links li {
+        margin: 1% -2.5%;
+        border: solid;
+        border-right: unset;
+        border-radius: 4%;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: unset;
+        text-decoration: underline;
+        font-size: 110%;
+    }
+
+    /**************************** * Main - Text-Content ****************************/
+    #text1 {
+        background: white;
+        margin: -2% 2%;
+        padding: 12%;
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    #text1 img {
+        margin: 4%;
+        padding: 4%;
+        border: thin dotted;
+        transition: .5s .5s ease;
+    }
+
+    #text1 img:hover {
+        transform: scale(1.02);
+    }
+
+    #text1 ul {
+        width: 50%;
+        margin: 2% 8% 4%;
+    }
+
+    #text1 li {
+        width: 40%;
+        margin: .5% auto;
+        padding: .5%;
+        border-radius: 4%;
+        box-shadow: -5px 4px 2px -2px;
+        text-align: center;
+        transition: .2s;
+    }
+
+    #text1 li:hover {
+        list-style: square inside;
+        border: ridge;
+        border-radius: 5px;
+    }
+
+    #text1 cite {
+        position: absolute;
+        margin: 2% 25%;
+        text-align: right;
+        font-size: .9em;
+    }
+
+    #text2 {
+        width: 95%;
+        background: linear-gradient(to top right, white, blue 2%, white 10%, white 89%, blue 92%, white);
+        margin: 8% auto .5%;
+        padding: 4%;
+        text-align: justify;
+        line-height: 1.5;
+        border: .2em dotted;
+        box-shadow: 4px -2px 3px 4px, -2px 5px 4px 4px white;
+    }
+
+    #text2 h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #text2 ul {
+        margin: 2% 5%;
+        list-style-type: square;
+    }
+
+    /**************************** * Main * *******************************/
+    .content header h3 {
+        margin: 1% 4%;
+        padding: 2%;
+        border-bottom: 1em solid;
+        border-radius: 20px;
+        font-size: 1.7em;
+    }
+
+    #images2,
+    #images3 {
+        float: right;
+        width: 25%;
+        max-height: 50vh;
+        background: linear-gradient(-20deg, black 18%, transparent, white 58%, transparent);
+        margin: 4% 2%;
+        padding: 2%;
+        border: .2em outset;
+        outline: medium double;
+    }
+
+    #images2 img,
+    #images3 img {
+        max-width: 5.9vw;
+        height: 5.8vh;
+        background: black;
+        margin: 2% 5%;
+        padding: 2.5%;
+        border: thick outset;
+        outline: thin double;
+        border-radius: 5%;
+        transition: .85s ease;
+    }
+
+    #images2 img:hover,
+    #images3 img:hover {
+        background: unset;
+        border: medium inset;
+        transform: scale(1.5);
+    }
+
+    #images2 p {
+        float: right;
+        margin: 44% -4%;
+        padding: 2.5%;
+        outline: .25em outset silver;
+        border-radius: 20%;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    #images3 p {
+        float: left;
+        margin: -31% -5.85%;
+        padding: 2.5%;
+        outline: .25em inset silver;
+        border-radius: 20%;
+        font-size: 1.4em;
+        font-weight: bold;
+        transition: .2s;
+    }
+
+    #images2 p:hover,
+    #images3 p:hover {
+        outline-style: groove;
+        border-radius: 10%;
+    }
+
+    #image-display {
+        height: 58vh;
+        margin: 2% auto;
+        padding: 1% 2.5%;
+        border-right: groove;
+        border-left: groove;
+        box-shadow: -.5em 1em 1.5em -.2em;
+        border-radius: 12px;
+    }
+
+    /**************************** * Main - Side-Element1 ****************************/
+    .aside1 {
+        background: silver;
+        margin: auto -2% 2% 18%;
+        padding: 2%;
+        border: .5em double;
+        border-radius: 4px;
+    }
+
+    .aside1 h3 {
+        width: 28%;
+        background-color: silver;
+        margin: -3.5% auto -1%;
+        padding: 2%;
+        border-top: .25em solid;
+        border-bottom: ridge;
+        border-radius: 5.5%;
+    }
+
+    .aside1 h4 {
+        margin: 8% 0 -5.8%;
+    }
+
+    .aside1 p {
+        margin: 1% 20%;
+        padding: 2% 4%;
+        border-left: 2px solid;
+        line-height: 1.2;
+    }
+
+    .aside1 article {
+        background: black;
+        color: white;
+        margin: 1% 20%;
+        padding: 2% 5%;
+        box-shadow: -1px 2px 18px 4px;
+        text-align: justify;
+    }
+
+    /**************************** * Main - Side-Element2 ****************************/
+    .aside2 {
+        width: 14%;
+        position: absolute;
+        float: right;
+        bottom: -225vh;
+        right: .25%;
+        padding: 2%;
+        background: linear-gradient(white, transparent, blue);
+        border: thick groove;
+        border-radius: 8px;
+    }
+
+    .aside2 h3 {
+        padding: 4% 2%;
+        outline: double;
+        border-radius: 4px;
+    }
+
+    .aside2 p {
+        background: linear-gradient(25deg, blue, transparent 50%, silver 54%);
+        margin: 5% -4%;
+        padding: 5%;
+        outline: double;
+        text-shadow: 2px -1px 4px white;
+        line-height: 1.4;
+    }
+
+    .aside2 img {
+        margin: 5% auto;
+        padding: 2%;
+        outline: outset;
+    }
+
+    .aside2 address,
+    .aside2 cite {
+        background: white;
+        padding: 2% 5%;
+        outline: double;
+    }
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+        width: 90%;
+        margin: 2% auto;
+        padding: 2% 0;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+        border: .5em ridge;
+        border-radius: 50%;
+    }
+
+    footer p {
+        background-color: white;
+        padding: 2%;
+        line-height: 1.5;
+    }

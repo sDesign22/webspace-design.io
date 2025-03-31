@@ -1,0 +1,463 @@
+    /******************** HID **************************/
+    #text1,
+    #images2,
+    .aside2 {
+    	display: none;
+    }
+
+    /**************************** Design-Links ****************************/
+    nav {
+    	margin: .25% 5%;
+    	padding: .25% 1%;
+    	border: .2em dotted white;
+    	border-radius: 2%;
+    }
+
+    nav:hover ul {
+    	background: repeating-linear-gradient(-25deg, transparent, silver 12%, transparent 24%, black) 42%;
+    	color: silver;
+    	border-radius: 8px;
+    	font-family: Tahoma, Verdana, sans-serif;
+    	background-size: 18%;
+    	transform: scale(1.1);
+    	transition: .25s ease-in;
+    }
+
+    nav:hover ul li {
+    	background: linear-gradient(120deg, silver, transparent 18%, black);
+    	color: silver;
+    	padding: .5% 4%;
+    	transition: .25s ease-in;
+    	border-color: silver;
+    }
+
+    nav>ul {
+    	background: white;
+    	padding: .5%;
+    	border-radius: 5px;
+    	transition: .5s ease-in;
+    }
+
+    nav ul>li {
+    	margin: auto;
+    	padding: .5% 2%;
+    	border: .2em ridge black;
+    	border-radius: 20px;
+    	box-shadow: 4px 5px 10px -2px;
+    	transition: .2s ease-in;
+    }
+
+    nav ul>li:hover {
+    	background: linear-gradient(-100deg, silver 59.75%, transparent);
+    	color: white;
+    	border-color: white;
+    	border-radius: 8px;
+    }
+
+    nav li>a {
+    	text-decoration: none;
+    	color: unset;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    /******************************** ** Main ** ***************************************/
+    main {
+    	border: .15em dotted white;
+    	background: repeating-linear-gradient(40deg, rgba(210, 202, 171, 0.5) -10%, black 10%, red 2%, blue 19%);
+    }
+
+    main h2 {
+    	color: silver;
+    	background: linear-gradient(transparent, black, white);
+    	margin: 5% 20% 2%;
+    	padding: 2% 15%;
+    	border: thin inset;
+    	border-bottom: .2em solid blue;
+    	border-right: .25em solid blue;
+    	border-radius: 10px;
+    	box-shadow: .25em -2px 5px .25em;
+    	font-size: 2.1em;
+    }
+
+    .main {
+    	width: 80%;
+    	margin: auto 14%;
+    	background: linear-gradient(10deg, silver 80%, transparent);
+    	border: 2em outset;
+    }
+
+    #content-header {
+    	padding: 1% 3%;
+    	margin: -5% 10%;
+    	border-radius: 4px;
+    	box-shadow: -2px 2px 5px 4px;
+    	font-size: 1.5em;
+    	text-align: left;
+    }
+
+    #display-link {
+    	float: right;
+    	color: white;
+    	margin: 2% 5.5% 0;
+    	padding: .5% 1%;
+    	font-size: 1.04em;
+    	outline: groove;
+    	border-radius: 5px;
+    	font-weight: bold;
+    	text-decoration: underline wavy;
+    	transition: .2s ease-out;
+    }
+
+    #display-link:hover {
+    	color: blue;
+    	background: silver;
+    	font-size: 1.15em;
+    	border: .2em groove;
+    	border-radius: 20px;
+    	text-decoration: unset;
+    	transition: .4s ease;
+    }
+
+    /**************************** * Main - Menu-Links ****************************/
+    .menu {
+    	width: 40vw;
+    	position: absolute;
+    	background: linear-gradient(-24deg, black 10%, white 25%, transparent 45%, white 85%, black),
+    		repeating-linear-gradient(25deg, silver 10%, transparent, white 50%);
+    	background-size: 15%;
+    	margin: .4%;
+    	border: .2em double;
+    	box-shadow: 1px -1px 2px 4px silver;
+    }
+
+    .menu:hover {
+    	transform: scale(1.05) translate(2%);
+    	transition: 1s;
+    }
+
+    .menu>h3 {
+    	width: 10%;
+    	color: blue;
+    	margin: -5%;
+    	padding: 5%;
+    	border-radius: 5%;
+    	font-family: monospace;
+    	font-size: 1.75em;
+    	font-weight: bold;
+    }
+
+    #menu-links {
+        position: relative;
+    	left: 14%;
+    	transition: .5s;
+    }
+
+    #menu-links li {
+    	float: left;
+    	margin: -4% 2% auto;
+    	padding: 2%;
+    	background: linear-gradient(white 5%, silver 8%, transparent 90%);
+    	border: thin inset;
+    	border-radius: 5px;
+    	font-size: 85%;
+    	font-weight: bold;
+    }
+
+    #menu-links li:hover {
+    	color: silver;
+    	margin: -4.5% 1% -2.5%;
+    	border-right: .5em inset;
+    	box-shadow: 2px -5px 5px 4px, -5px 2px 5px 4px blue;
+    	font-size: 100%;
+    }
+
+    #menu-links li:hover a {
+    	color: blue;
+    	text-decoration: none;
+    }
+
+    #menu-links li a:hover {
+    	color: white;
+    }
+
+    /**************************** * Main - Applet ****************************/
+    #applet {
+    	display: inline-flex;
+    	width: 100%;
+    	flex-flow: row-reverse wrap;
+    	justify-content: flex-end;
+    	align-items: center;
+    }
+
+    .tag {
+    	background: linear-gradient(45deg, transparent, white 25%, transparent, silver);
+    	position: absolute;
+    	width: 8%;
+    	right: 4.7%;
+    	margin: -2%;
+    	padding: 0 .5%;
+    	border: outset;
+    	border-radius: 10%;
+    	box-shadow: 4px 5px 0 -2px;
+    }
+
+    .tag:hover {
+    	padding: .25%;
+    	margin: -1.5%;
+    	border: inset;
+    	border-radius: 28%;
+    }
+
+    .tag h4 {
+    	width: 112%;
+    	background: linear-gradient(transparent, white, black 85%, transparent);
+    	color: blue;
+    	margin: 25% -5%;
+    	padding: 4% 2%;
+    	border-bottom: double black;
+    	border-top: groove;
+    	border-radius: 5%;
+    	font-size: 1.5em;
+    }
+
+    .tag:hover h4 {
+    	background: unset;
+    	border: unset;
+    }
+
+    .tag h4:hover {
+    	color: black;
+    	font-size: 1.75em;
+    	text-shadow: -2px 4px 4px silver;
+    }
+
+    #video-tag {
+    	margin-bottom: 20%;
+    }
+
+    #link-list,
+    #video-list {
+    	display: none;
+    }
+
+    #content-object {
+    	margin: auto 10% .5% -5%;
+    }
+
+    #content-object iframe {
+    	outline: outset white;
+    	border-radius: 2%;
+    }
+
+    #content-nav {
+    	background: linear-gradient(to top left, transparent 25%, black, transparent, blue) 180%;
+    	background-size: 10%;
+    	margin: 2% auto;
+    	padding: 1% 4%;
+    	border: thick groove;
+    	border-radius: 4%;
+    	box-shadow: 12px -4px 5px 10px white, 2px 4px 5px 8px;
+    }
+
+    #content-nav ul {
+    	background: linear-gradient(-10deg, transparent, white 25%, silver 80%, transparent);
+    	margin: -2% -20%;
+    	padding: 2%;
+    	border-right: unset;
+    	border-radius: 2%;
+    	font-size: 1.25em;
+    	font-weight: bold;
+    	transition: 1s;
+    }
+
+    #content-nav ul:hover {
+    	background-color: silver;
+    	transition: 1s .2s;
+    }
+
+    #content-nav ul:hover li {
+    	border-left: thick solid green;
+    }
+
+    #content-nav ul li {
+    	background: repeating-linear-gradient(transparent 10%, white 20%, transparent 22%);
+    	margin: 10% -8%;
+    	padding: 8%;
+    	border: inset;
+    }
+
+    #content-nav ul li:hover {
+    	background: linear-gradient(transparent, silver 10%, white, transparent);
+    	color: blue;
+    	border: inset green;
+    	border-radius: 20px;
+    	text-shadow: 1px 1px 2px black;
+    	transform: scale(1.02) translate(-2%);
+    	transition: .25s;
+    }
+
+    /**************************** * Main ****************************/
+    .content header h3 {
+    	width: 25%;
+    	margin: 5.75% auto 2.5%;
+    	padding: 1%;
+    	border: .2em groove;
+    	outline: .2em double;
+    	font-size: 1.5em;
+    }
+
+    #images1 img,
+    #images3 img {
+    	max-width: 6vw;
+    	height: 8vh;
+    	margin: .75% .5%;
+    	padding: .5% 1%;
+    	border: .25em double white;
+    	border-radius: 4px;
+    }
+
+    #images3 img {
+    	margin-bottom: -2.75%;
+    }
+
+    #images1,
+    #images3 {
+    	background: linear-gradient(27deg, black 52%, transparent, red);
+    	padding-top: .5%;
+    	border: thick double;
+    }
+
+    #image-display {
+    	height: 50vh;
+    	max-width: 100%;
+    	padding: 1%;
+    	margin-bottom: -.4%;
+    	border: .8em solid;
+    	transition: 1.5s .5s ease-out;
+    }
+
+    #image-display:hover {
+    	background: black;
+    	padding: unset;
+    	border-style: inset;
+    	transform: scale(1.25);
+    }
+
+    /**************************** * Main - Text-Content ****************************/
+    #text2 {
+    	background: conic-gradient(from 45deg, transparent, red, transparent, black, transparent, white);
+    	width: 85%;
+    	margin: 8% auto;
+    	padding: 5%;
+    	background-size: 5%;
+    	border: thick groove;
+    	border-radius: 10%;
+    	line-height: 1.25;
+    	font-size: 1.2em;
+    }
+
+    #text2 h3 {
+    	margin: 2%;
+    	padding-top: 1%;
+    	border: .2em ridge;
+    	outline: .25em double black;
+    	font-size: 1.5em;
+    }
+
+    #text2 p {
+    	max-width: 105%;
+    	background: linear-gradient(to top right, transparent, white, transparent, blue);
+    	margin: 4% auto -2.5%;
+    	padding: 2%;
+    	outline: thick double;
+    	border-radius: 4%;
+    }
+
+    #text2 ul {
+    	background: linear-gradient(12deg, silver 45%, transparent, blue);
+    	margin: 2.5%;
+    	padding: 2% 10%;
+    	outline: thick ridge;
+    	list-style-type: square;
+    }
+
+    #text2 li {
+    	margin: .5% 10%;
+    	padding: 1%;
+    	border: 2px solid;
+    	border-radius: 2%;
+    	transition: .25s ease-out;
+    }
+
+    #text2 li:hover {
+    	background: linear-gradient(-25deg, silver, transparent, blue, transparent);
+    	color: white;
+    	margin: .5% 8%;
+    	border: thick outset;
+    	border-radius: 15px;
+    	list-style: circle inside;
+    	font-size: 1.1em;
+    }
+
+    /**************************** * Main - Side-Element1 ****************************/
+    .aside1 {
+    	width: 12%;
+    	position: sticky;
+    	float: left;
+    	top: 0;
+    	margin: -2% auto;
+    	padding: 1%;
+    	background: linear-gradient(45deg, transparent, blue, transparent, silver, transparent);
+    	border-radius: 12px;
+    }
+
+    .aside1 h3 {
+    	margin: 10% -5%;
+    	padding: 5%;
+    	border: .2em outset;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 2px 2px, 4px -2px 1px 8px red;
+    }
+
+    .aside1:hover {
+    	transform: scale(1.1) translate(10%);
+    	transition: 1.5s;
+    }
+
+    .aside1 p {
+    	width: 115%;
+    	background: repeating-linear-gradient(120deg, transparent -295%, silver 92%, transparent, blue 95%);
+    	background-size: 10%;
+    	margin: 1% -12%;
+    	padding: 5%;
+    	line-height: 1.28;
+    	border-top: 1.5em double green;
+    	border-bottom: 1em ridge blue;
+    	border-right: ridge;
+    	border-radius: 20%;
+    }
+
+    .aside1 article {
+    	background-color: blue;
+    	color: white;
+    	padding: 0 4%;
+    	border-radius: 25%;
+    	border: double;
+    	line-height: 1.5;
+    }
+
+    /**************************** * Main - Footer ****************************/
+    footer {
+    	width: 90%;
+    	margin: 2% auto;
+    	padding: 2% 0;
+    	background: linear-gradient(125deg, red, transparent, green, transparent, blue);
+    	border: .5em ridge;
+    	border-radius: 50%;
+    }
+
+    footer p {
+    	background-color: white;
+    	padding: 2%;
+    	line-height: 1.5;
+    }
