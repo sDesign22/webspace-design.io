@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web-Design Space</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="Main_Content/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="Links_Content/form.css" id="style-link" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style>
+        body > header {
+            border: .15em dotted white;
+            background: repeating-linear-gradient(-20deg, rgba(210,202,171,0.5) 8.9%, black 9%, black 10%, blue 9%),
+            repeating-linear-gradient(50deg, rgba(210,202,171,0.5) -10%, black 10%, red 2%, blue 19%);
+            background-size: 40%;
+            }
+        header > p {
+            background-color: white;
+            width: 80%;
+            padding: 1%;
+            margin: 1% auto;
+            border: .25em inset;
+            border-radius: 4px;
+            line-height: 1.2;
+            }
+        h1 {
+            width: 50%;
+            margin: 1% auto;
+            padding: 1%;
+            color: silver;
+            border: .5em double;
+            border-radius: 4%;
+            font-family: cursive;
+            font-size: 2.5em;
+            }
+        ul { font-family: 'Times New Roman', Times, serif; list-style: none;}
+    </style>
+</head>
+
+<!---------------------------------------------------- - BODY - -------------------------------------------------------->
+<body style="margin:auto; text-align:center;">
+<!------------------------------------------------------ -- Header -- --------------------------------------------------------------------->
+<header>
+    <h1>Site Form</h1>
+    <!--------------------------------- -- MAIN - Page-Navigation -- ----------------------------------------------->
+    <nav>
+        <a href="index.html" id="display-link">Main Site</a>
+        <ul>
+            <li><a href="form.html">Site Form</a></li>
+            <li><a href="about_site.html">About the Site</a></li>
+            <li><a href="resources.html">Site Resources</a></li>
+            <li><a target="_blank" href="https://sdesign2022.wordpress.com/">WordPress Website</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!---------------------------------------------------------------- -BODY - MAIN- ----------------------------------------------->
+<main>
+    <form id="form" onsubmit="submitFunction()">
+        <fieldset>
+            <legend>Site Form</legend>
+            <div class="form-input">
+                <label for="first_name">First name:</label>
+                <input type="text" id="first_name" name="first_name" required="required"
+                       aria-required="true" placeholder="John">
+                <label for="last_name">Last name:</label>
+                <input type="text" id="last_name" name="last_name" required="required"
+                       aria-required="true" placeholder="Smith">
+            </div>
+            <div class="form-input">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required="required" aria-required="true"
+                       placeholder="John_Smith@exampledomain.com" size="25"/>
+            </div>
+            <div class="form-input">
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" title="Enter when you visited the site!"/>
+                <label for="time">Time of Visit:</label>
+                <input type="time" id="time" name="time"
+                       title="Enter the time you visited the site!"/>
+            </div>
+            <div class="form-input">
+                <p>Select the designs you viewed:</p>
+                <input type="checkbox" id="design1" name="design1" value="1">
+                <label for="design1">Design 1</label><br>
+                <input type="checkbox" id="design2" name="design2" value="2">
+                <label for="design2">Design 2</label><br>
+                <input type="checkbox" id="design3" name="design3" value="3">
+                <label for="design3">Design 3</label><br>
+                <input type="checkbox" id="design4" name="design4" value="4">
+                <label for="design4">Design 4</label><br>
+                <input type="checkbox" id="design5" name="design5" value="5">
+                <label for="design5">Design 5</label>
+            </div>
+            <div class="form-input">
+                <p>Choose your favorite site design:</p>
+                <input type="radio" id="design1-rb" name="design-rb" value="1">
+                <label for="design1-rb">Design 1</label>
+                <input type="radio" id="design2-rb" name="design-rb" value="2">
+                <label for="design2-rb">Design 2</label>
+                <input type="radio" id="design3-rb" name="design-rb" value="3">
+                <label for="design3-rb">Design 3</label>
+                <input type="radio" id="design4-rb" name="design-rb" value="4">
+                <label for="design4-rb">Design 4</label>
+                <input type="radio" id="design5-rb" name="design-rb" value="5">
+                <label for="design5-rb">Design 5</label>
+            </div>
+            <div class="form-input">
+                <label for="rating">Site Rating:</label>
+                <input type="range" id="rating" name="rating" value="5" min="0" max="10"
+                       oninput="ratingInt.value=rating.value"/>
+                <output name="ratingInt" for="rating">5</output>
+                /10
+            </div>
+            <div class="form-input">
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" name="feedback"
+                          placeholder="Leave some feedback about the site here!!" rows="10"
+                          cols="50">
+				</textarea>
+            </div>
+            <div class="form-input">
+                <label for="dev-lang">Your favorite Development Language:</label>
+                <select id="dev-lang" name="dev-lang">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-buttons">
+                <input type="reset" value="Reset">
+                <input id="submit" type="submit"/>
+            </div>
+        </fieldset>
+    </form>
+
+</main>
+<!--------------------------------------------------------------------- -MAIN- Footer ------------------------------------------------>
+<footer>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <p>Thanks for visiting my web site!<br>
+        I hope you enjoyed the site designs, these projects were helped using the <a
+                href="https://www.w3schools.com/">W3 Schools
+            Website</a> - <i>Tutorials</i>.
+        <br>
+        You can also visit my HTML Guide Website at: <a
+                href="https://sdesign22.github.io/html-guide.io/">https://sdesign22.github.io/html-guide.io/</a>
+    </p>
+</footer>
+
+</body>
+<script>
+    function submitFunction() {
+      const name = document.getElementById("first_name").value;
+      alert("The form was submitted " + name + "!" + "\nHowever, this sites form does not actually connect the data to an external server.");
+    }
+</script>
+</html>
