@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Web-Design Space</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,13 +10,14 @@
     <script src="Main_Content/siteJS.js"></script>
 
     <style>
-        body > header {
+        body>header {
             border: .15em dotted white;
-            background: repeating-linear-gradient(-20deg, rgba(210,202,171,0.5) 8.9%, black 9%, black 10%, blue 9%),
-            repeating-linear-gradient(50deg, rgba(210,202,171,0.5) -10%, black 10%, red 2%, blue 19%);
+            background: repeating-linear-gradient(-20deg, rgba(210, 202, 171, 0.5) 8.9%, black 9%, black 10%, blue 9%),
+                repeating-linear-gradient(50deg, rgba(210, 202, 171, 0.5) -10%, black 10%, red 2%, blue 19%);
             background-size: 40%;
-            }
-        header > p {
+        }
+
+        header>p {
             background-color: white;
             width: 80%;
             padding: 1%;
@@ -23,7 +25,8 @@
             border: .25em inset;
             border-radius: 4px;
             line-height: 1.2;
-            }
+        }
+
         h1 {
             width: 50%;
             margin: 1% auto;
@@ -33,390 +36,411 @@
             border-radius: 4%;
             font-family: cursive;
             font-size: 2.5em;
-            }
-        ul { font-family: 'Times New Roman', Times, serif; list-style: none;}
+        }
+
+        ul {
+            font-family: 'Times New Roman', Times, serif;
+            list-style: none;
+        }
     </style>
 </head>
 
 <!---------------------------------------------------- - BODY - -------------------------------------------------------->
+
 <body style="margin:auto; text-align:center;">
-<!------------------------------------------------------ -- Header -- --------------------------------------------------------------------->
-<header>
-    <h1>Welcome to my web design Space!</h1>
-    <p> This website was created to display both web design and development, witch is done using all
-        the common features of each.
-        The design aspect shows how each part of a webpage is created, and incorporated into a page
-        using several custom styles.
-        While the development aspect uses all the basic and advanced features of: HTML, CSS and
-        JavaScript.
-        <br>Each design is done as four themes, with a final fifth theme that will be added (as in
+    <!------------------------------------------------------ -- Header -- --------------------------------------------------------------------->
+    <header>
+        <h1>Welcome to my web design Space!</h1>
+        <p> This website was created to display both web design and development, witch is done using all
+            the common features of each.
+            The design aspect shows how each part of a webpage is created, and incorporated into a page
+            using several custom styles.
+            While the development aspect uses all the basic and advanced features of: HTML, CSS and
+            JavaScript.
+            <br>Each design is done as four themes, with a final fifth theme that will be added (as in
         the sites first version).
         This theme, unlike the others, will be done from a drawn wireframe design.
-    </p>
-    <br>
-    <em style="color:silver; font-size: 1.5em; padding: 1% 20%; border:double;"> Choose from the
-        design links below to change the web theme:</em>
-    <!-------------------------------------- -- Display-Navigation -- --------------------------------------------------->
-    <nav>
-        <ul style="display: flex; justify-content: center; margin: .5% auto; font-size: 1.2em; font-weight: bold; border: .25em double white">
-            <li><a href="#"
-                   onclick="document.getElementById('style-link').href = 'Main_Content/Design1.css', DesignReset(1); ">Design
-                1</a></li>
-            <li><a href="#"
-                   onclick="document.getElementById('style-link').href = 'Main_Content/Design2.css', DesignReset(2); ">Design
-                2</a></li>
-            <li><a href="#"
-                   onclick="document.getElementById('style-link').href = 'Main_Content/Design3.css', DesignReset(3);">Design
-                3</a></li>
-            <li><a href="#"
-                   onclick="document.getElementById('style-link').href = 'Main_Content/Design4.css', DesignReset(4);">Design
-                4</a></li>
-            <li><a href="design5.html">Design 5</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!---------------------------------------------------------------- -BODY - MAIN- ----------------------------------------------->
-<main>
-    <!--------------------------------- -- MAIN - Page-Navigation -- ----------------------------------------------->
-    <div class="menu" id="menu">
-        <h3 id="menu-tab">Menu</h3>
-        <ul id="menu-links">
-            <li><a href="form.html">Site Form</a></li>
-            <li><a href="about_site.html">About the Site</a></li>
-            <li><a href="resources.html">Site Resources</a></li>
-            <li><a target="_blank" href="https://sdesign2022.wordpress.com/">WordPress Website</a>
-            </li>
-        </ul>
-    </div>
-    <a href="#images1" id="display-link">Image Gallery!</a>
-    <!---------------------------------------------------------------- -MAIN- Heading ----------------------------------------------->
-    <h2 id="main-title">Design 1</h2>
-    <!------------------------------------------------------------- -MAIN- SIDE-ELEMENT1 ------------------------------------------------->
-    <aside class="aside1" id="aside1">
-        <h3>Side Element 1!</h3>
-        <p>This paragraph is written within a <<b>p</b>> element (in-side the HTML code). The entire
-            "Side Element" also contains some other
-            HTML Elements, to help complete it's design - <i>See you're web browsers "Developer
-                tools"</i>.
-            <br> Using CSS code, this element is then styled depending on the design theme you have
-            chosen.
         </p>
-        <article>
-            <h4>Learn More!</h4>
-            <p>See Element-2</p>
-        </article>
-        <article>
-            This is written in another HTML element called <<b>article</b>>, and it is meant for an
-            article or blog piece! Note:
-            SEO (Search engine optimization), is also based on these elements.
-        </article>
-    </aside>
-    <!--------------------------------------------------------- -MAIN- Content --------------------------------------------------->
-    <section class="main" id="main">
-        <!--------------------------------------------------------- Content - Header ------------------------------------------------------>
-        <header id="content-header">
-            <h3 id="content-heading">Web Design</h3>
-        </header>
-        <!--------------------------------------------------------- Content - Applet --------------------------------------------->
-        <aside id="applet">
-            <div id="animation1"></div>
-            <div class="tag" id="links-tag">
-                <h4>Links</h4>
-                <ul id="link-list">
-                    <li onclick="document.getElementById('object-display').src = 'https://www.webfx.com/web-design/glossary/what-is-web-design/';">
-                        What Is Web Design?
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://millo.co/topics-to-write-about-on-your-design-blog';">
-                        100+ Design Topics
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://elementor.com/blog/web-design-ideas/';">
-                        10 Creative Web Design Ideas
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.mockplus.com/blog/post/best-website-design-trends-2022';">
-                        15 Best Web Design Trends & Ideas for 2022
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.theedigital.com/blog/web-design-trends';">
-                        24 Top Web Design Trends 2024
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.halo-lab.com/blog/modern-website-design'; ">
-                        Modern Website Designs
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.webdesign.org/';">
-                        Web Design Library
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.top10.com/website-builders/comparison';">
-                        Top 10 Best Website Builders of 2024
-                    </li>
-                </ul>
-            </div>
-            <div class="tag" id="video-tag">
-                <h4>Videos</h4>
-                <ul id="video-list">
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/5STsDYbu6Tg';">
-                        How to Start a Website Layout
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/s7OI9gGjRhM';">
-                        Top Web Design Trends 2022
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/cU2jEsI1qfM';">
-                        How to Create UX Design Portfolio Website
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/zF6VSky4SIc';">
-                        Responsive Web Design
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/slDybGJI1Ao';">
-                        5 Inspirational Website Designs
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/IbOyBIS57C0';">
-                        Professional Web Design Process Explained
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/pFWaBMEkSd8';">
-                        2024 Web Design Trends
-                    </li>
-                    <li onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/hZEkE5Fm0XM';">
-                        Figma to Squarespace (Web Design Tutorial)
-                    </li>
-                </ul>
-            </div>
-            <div id="animation2"></div>
-            <object id="content-object">
+        <br>
+        <em style="color:silver; font-size: 1.5em; padding: 1% 20%; border:double;"> Choose from the
+        design links below to change the web theme:</em>
+        <!-------------------------------------- -- Display-Navigation -- --------------------------------------------------->
+        <nav>
+            <ul
+                style="display: flex; justify-content: center; margin: .5% auto; font-size: 1.2em; font-weight: bold; border: .25em double white">
+                <li><a href="#"
+                        onclick="document.getElementById('style-link').href = 'Main_Content/Design1.css', DesignReset(1); ">Design
+                        1</a></li>
+                <li><a href="#"
+                        onclick="document.getElementById('style-link').href = 'Main_Content/Design2.css', DesignReset(2); ">Design
+                        2</a></li>
+                <li><a href="#"
+                        onclick="document.getElementById('style-link').href = 'Main_Content/Design3.css', DesignReset(3);">Design
+                        3</a></li>
+                <li><a href="#"
+                        onclick="document.getElementById('style-link').href = 'Main_Content/Design4.css', DesignReset(4);">Design
+                        4</a></li>
+                <li><a href="design5.html">Design 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------------------------------------------------------------- -BODY - MAIN- ----------------------------------------------->
+    <main>
+        <!--------------------------------- -- MAIN - Page-Navigation -- ----------------------------------------------->
+        <div class="menu" id="menu">
+            <h3 id="menu-tab">Menu</h3>
+            <ul id="menu-links">
+                <li><a href="form.html">Site Form</a></li>
+                <li><a href="about_site.html">About the Site</a></li>
+                <li><a href="resources.html">Site Resources</a></li>
+                <li><a target="_blank" href="https://sdesign2022.wordpress.com/">WordPress Website</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#images1" id="display-link">Image Gallery!</a>
+        <!---------------------------------------------------------------- -MAIN- Heading ----------------------------------------------->
+        <h2 id="main-title">Design 1</h2>
+        <!------------------------------------------------------------- -MAIN- SIDE-ELEMENT1 ------------------------------------------------->
+        <aside class="aside1" id="aside1">
+            <h3>Side Element 1!</h3>
+            <p>This paragraph is written within a <<b>p</b>> element (in-side the HTML code). The entire
+                    "Side Element" also contains some other
+                    HTML Elements, to help complete it's design - <i>See you're web browsers "Developer
+                tools"</i>.
+                    <br> Using CSS code, this element is then styled depending on the design theme you have
+            chosen.
+            </p>
+            <article>
+                <h4>Learn More!</h4>
+                <p>See Element-2</p>
+            </article>
+            <article>
+                This is written in another HTML element called <<b>article</b>>, and it is meant for an
+                    article or blog piece! Note:
+                    SEO (Search engine optimization), is also based on these elements.
+            </article>
+        </aside>
+        <!--------------------------------------------------------- -MAIN- Content --------------------------------------------------->
+        <section class="main" id="main">
+            <!--------------------------------------------------------- Content - Header ------------------------------------------------------>
+            <header id="content-header">
+                <h3 id="content-heading">Web Design</h3>
+            </header>
+            <!--------------------------------------------------------- Content - Applet --------------------------------------------->
+            <aside id="applet">
+                <div id="animation1"></div>
+                <div class="tag" id="links-tag">
+                    <h4>Links</h4>
+                    <ul id="link-list">
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.webfx.com/web-design/glossary/what-is-web-design/';">
+                            What Is Web Design?
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://millo.co/topics-to-write-about-on-your-design-blog';">
+                            100+ Design Topics
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://elementor.com/blog/web-design-ideas/';">
+                            10 Creative Web Design Ideas
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.mockplus.com/blog/post/best-website-design-trends-2022';">
+                            15 Best Web Design Trends & Ideas for 2022
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.theedigital.com/blog/web-design-trends';">
+                            24 Top Web Design Trends 2024
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.halo-lab.com/blog/modern-website-design'; ">
+                            Modern Website Designs
+                        </li>
+                        <li onclick="document.getElementById('object-display').src = 'https://www.webdesign.org/';">
+                            Web Design Library
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.top10.com/website-builders/comparison';">
+                            Top 10 Best Website Builders of 2024
+                        </li>
+                    </ul>
+                </div>
+                <div class="tag" id="video-tag">
+                    <h4>Videos</h4>
+                    <ul id="video-list">
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/5STsDYbu6Tg';">
+                            How to Start a Website Layout
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/s7OI9gGjRhM';">
+                            Top Web Design Trends 2022
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/cU2jEsI1qfM';">
+                            How to Create UX Design Portfolio Website
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/zF6VSky4SIc';">
+                            Responsive Web Design
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/slDybGJI1Ao';">
+                            5 Inspirational Website Designs
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/IbOyBIS57C0';">
+                            Professional Web Design Process Explained
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/pFWaBMEkSd8';">
+                            2024 Web Design Trends
+                        </li>
+                        <li
+                            onclick="document.getElementById('object-display').src = 'https://www.youtube.com/embed/hZEkE5Fm0XM';">
+                            Figma to Squarespace (Web Design Tutorial)
+                        </li>
+                    </ul>
+                </div>
+                <div id="animation2"></div>
+                <object id="content-object">
                 <iframe allowfullscreen height="580" id="object-display"
                         src="https://www.youtube.com/embed/qthkkHPNAYQ"
                         title="Video Player" width="785"></iframe>
             </object>
-            <section id="content-nav">
-                <ul>
-                    <li onclick="ContentSwitch(1)">Web Design</li>
-                    <li onclick="ContentSwitch(2)">Web Development</li>
-                    <li onclick="ContentSwitch(3)">Additional Resources</li>
-                </ul>
-            </section>
-        </aside>
-        <!--------------------------------------------------------- -- Content - Text1 -- ---------------------------------------------->
-        <div id="text1">
-            <p> In his essay, The Politics of Design, the iconic designer Paul Rand wrote, “Design
-                is a problem-solving activity.
-                It provides a means of clarifying, synthesizing, and dramatizing a word, a picture,
-                a product, or an event.”
-                Web designers are constantly solving problems for their users.
-                <br> Websites should make it easy for users to go where they want to go and do what
+                <section id="content-nav">
+                    <ul>
+                        <li onclick="ContentSwitch(1)">Web Design</li>
+                        <li onclick="ContentSwitch(2)">Web Development</li>
+                        <li onclick="ContentSwitch(3)">Additional Resources</li>
+                    </ul>
+                </section>
+            </aside>
+            <!--------------------------------------------------------- -- Content - Text1 -- ---------------------------------------------->
+            <div id="text1">
+                <p> In his essay, The Politics of Design, the iconic designer Paul Rand wrote, “Design
+                    is a problem-solving activity.
+                    It provides a means of clarifying, synthesizing, and dramatizing a word, a picture,
+                    a product, or an event.”
+                    Web designers are constantly solving problems for their users.
+                    <br> Websites should make it easy for users to go where they want to go and do what
                 they want to do.
                 A frustrated user is less likely to stick around, let alone come back to a website.
                 That’s why each web design element is in service of making the website as easy to
                 use as possible:
                 so people visit and interact with the website over and over again.
-                <img alt="Web Design & Development"
+                    <img alt="Web Design & Development"
                      src="https://thirdessential.com/wp-content/uploads/2022/02/Website-Development-Designing-980x686.png"
                      width="750">
-            <h4>Elements of web design</h4>
-            <ul>
-                <li>Layout</li>
-                <li>Visual hierarchy</li>
-                <li>Navigation</li>
-                <li>Color</li>
-                <li>Graphics</li>
-                <li>Speed</li>
-                <li>Accessibility</li>
-            </ul>
-            </p>
-            <h3>What is web design and development?</h3>
-            <p>Web design and development is an umbrella term that describes the process of creating
-                a website.
-                Like the name suggests, it involves two major skill sets: web design and web
-                development.
-                Web design determines the look and feel of a website, while web development
-                determines how it functions.
-                <br> Because there isn’t always a hard line that separates the two roles, the titles
+                <h4>Elements of web design</h4>
+                <ul>
+                    <li>Layout</li>
+                    <li>Visual hierarchy</li>
+                    <li>Navigation</li>
+                    <li>Color</li>
+                    <li>Graphics</li>
+                    <li>Speed</li>
+                    <li>Accessibility</li>
+                </ul>
+                </p>
+                <h3>What is web design and development?</h3>
+                <p>Web design and development is an umbrella term that describes the process of creating
+                    a website.
+                    Like the name suggests, it involves two major skill sets: web design and web
+                    development.
+                    Web design determines the look and feel of a website, while web development
+                    determines how it functions.
+                    <br> Because there isn’t always a hard line that separates the two roles, the titles
                 are often used interchangeably.
                 As the web continues to evolve, so do the roles. In the almost 30 years since the
                 first website was created,
                 numerous job titles have emerged to describe various skill sets used to create a
                 website, with more coming out every year.
                 These titles often overlap, and their meanings change from company to company.
-            </p>
-            <cite> <a href="https://www.invisionapp.com/defined/web-design-and-development">
+                </p>
+                <cite> <a href="https://www.invisionapp.com/defined/web-design-and-development">
                 https://www.invisionapp.com/defined/web-design-and-development</a> -
                 <strong>Article</strong>
                 <br> https://thirdessential.com/website-development-designing/ -
                 <strong>Image</strong>
             </cite>
-        </div>
-    </section>
-    <!---------------------------------------------------------- -MAIN- Content-2 ------------------------------------------------------->
-    <section class="main content">
-        <!--------------------------------------------------------- Images -------------------------------------------------------->
-        <header>
-            <h3>Image Gallery</h3>
-        </header>
-        <aside>
-            <div id="images1">
-                <img alt="Modern IT & Cloud Technologies"
+            </div>
+        </section>
+        <!---------------------------------------------------------- -MAIN- Content-2 ------------------------------------------------------->
+        <section class="main content">
+            <!--------------------------------------------------------- Images -------------------------------------------------------->
+            <header>
+                <h3>Image Gallery</h3>
+            </header>
+            <aside>
+                <div id="images1">
+                    <img alt="Modern IT & Cloud Technologies"
                      onclick="document.getElementById('image-display').src = 'https://atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png'; "
                      src="https://atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png"
                      width="200">
-                <img alt="Computer Coding"
+                    <img alt="Computer Coding"
                      onclick="document.getElementById('image-display').src = 'https://krannert.purdue.edu/centers/dcmme/images/projects/code.jpg'; "
                      src="https://krannert.purdue.edu/centers/dcmme/images/projects/code.jpg"
                      width="200">
-                <img alt="IT Web Designing"
+                    <img alt="IT Web Designing"
                      onclick="document.getElementById('image-display').src = 'https://media.proprofs.com/images/QM/user_images/1731481/1497588495.jpg'; "
                      src="https://media.proprofs.com/images/QM/user_images/1731481/1497588495.jpg"
                      width="200">
-                <img alt="Modern IT Technology"
+                    <img alt="Modern IT Technology"
                      onclick="document.getElementById('image-display').src = 'https://wallpapercave.com/wp/wp5599652.jpg'; "
                      src="https://wallpapercave.com/wp/wp5599652.jpg"
                      width="200">
-                <img alt="Web Design & Development Company Web-Site"
+                    <img alt="Web Design & Development Company Web-Site"
                      onclick="document.getElementById('image-display').src = 'https://dwestdesigns.com/wp-content/uploads/2019/01/modern-web-design-company-in-egypt-768x497.jpg'; "
                      src="https://dwestdesigns.com/wp-content/uploads/2019/01/modern-web-design-company-in-egypt-768x497.jpg"
                      width="200">
-                <img alt="Modern Tech Infrastructure"
-                     onclick="document.getElementById('image-display').src = 'https://th.bing.com/th/id/OIP.Z0odEWKgBNcInuEPPFu04wHaDc?pid=ImgDet&rs=1'; "
-                     src="https://th.bing.com/th/id/OIP.Z0odEWKgBNcInuEPPFu04wHaDc?pid=ImgDet&rs=1"
+                    <img alt="Modern Tech Infrastructure"
+                     onclick="document.getElementById('image-display').src = 'https://www.markiiisys.com/wp-content/uploads/2018/07/IT_Infrastructure_Header.jpg'; "
+                     src="https://www.markiiisys.com/wp-content/uploads/2018/07/IT_Infrastructure_Header.jpg"
                      width="200">
-                <img alt="Modern Web Designing"
+                    <img alt="Modern Web Designing"
                      onclick="document.getElementById('image-display').src = 'https://www.seo-copilot.co.uk/wp-content/uploads/2019/01/web-design-top-banner.jpg'; "
                      src="https://www.seo-copilot.co.uk/wp-content/uploads/2019/01/web-design-top-banner.jpg"
                      width="200">
-                <img alt="Modern IT & Cloud Technologies"
+                    <img alt="Modern IT & Cloud Technologies"
                      onclick="document.getElementById('image-display').src = 'https://atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png'; "
                      src="https://atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png"
                      width="200">
-            </div>
-            <div id="images2">
-                <p id="image-btn2"
-                   onclick="document.getElementById('images2').style.display = 'none'; document.getElementById('images3').style.display = 'unset';">
-                    > </p>
-                <img alt="Toronto Skyline at Night"
+                </div>
+                <div id="images2">
+                    <p id="image-btn2"
+                        onclick="document.getElementById('images2').style.display = 'none'; document.getElementById('images3').style.display = 'unset';">
+                        > </p>
+                    <img alt="Toronto Skyline at Night"
                      onclick="document.getElementById('image-display').src = 'https://agent.condonow.com/images/toronto_condo_skyline1600X1000_55.jpg'; "
                      src="https://agent.condonow.com/images/toronto_condo_skyline1600X1000_55.jpg"
                      width="200">
-                <img alt="A Mountainside"
+                    <img alt="A Mountainside"
                      onclick="document.getElementById('image-display').src = 'https://stormdude.com/hab/hikes/aa/zv13.jpg'; "
                      src="https://stormdude.com/hab/hikes/aa/zv13.jpg"
                      width="200">
-                <img alt="Yukon Winter-scape"
+                    <img alt="Yukon Winter-scape"
                      onclick="document.getElementById('image-display').src = 'https://www.travelyukon.com/sites/default/files/hero/2017-10/winter_fn.jpg'; "
                      src="https://www.travelyukon.com/sites/default/files/hero/2017-10/winter_fn.jpg"
                      width="200">
-                <img alt="Old-city Painting"
+                    <img alt="Old-city Painting"
                      onclick="document.getElementById('image-display').src = 'https://live.staticflickr.com/4079/4769492830_2f4a30ef48_b.jpg'; "
                      src="https://live.staticflickr.com/4079/4769492830_2f4a30ef48_b.jpg"
                      width="200">
-                <img alt="World Landmarks Poster"
+                    <img alt="World Landmarks Poster"
                      onclick="document.getElementById('image-display').src = 'https://ecdn.teacherspayteachers.com/thumbitem/World-Landmarks-Photo-Poster-Display-Pack-2529247-1559160821/original-2529247-2.jpg'; "
                      src="https://ecdn.teacherspayteachers.com/thumbitem/World-Landmarks-Photo-Poster-Display-Pack-2529247-1559160821/original-2529247-2.jpg"
                      width="200">
-                <img alt="Ko-olina Coast Sunset"
+                    <img alt="Ko-olina Coast Sunset"
                      onclick="document.getElementById('image-display').src = 'https://cdn.getyourguide.com/img/tour/5b95926104cbd.jpeg/146.jpg'; "
                      src="https://cdn.getyourguide.com/img/tour/5b95926104cbd.jpeg/146.jpg"
                      width="200">
-                <img alt="Segovia Overlook"
+                    <img alt="Segovia Overlook"
                      onclick="document.getElementById('image-display').src = 'https://c.wallhere.com/photos/82/ee/old_city_travel_building_spain_segovia_historical_overlook-877228.jpg!d'; "
                      src="https://c.wallhere.com/photos/82/ee/old_city_travel_building_spain_segovia_historical_overlook-877228.jpg!d"
                      width="200">
-                <img alt="New York City"
+                    <img alt="New York City"
                      onclick="document.getElementById('image-display').src = 'https://live.staticflickr.com/65535/48118748026_11f7c378b1.jpg';"
                      src="https://live.staticflickr.com/65535/48118748026_11f7c378b1.jpg"
                      width="200">
-            </div>
-        </aside>
-        <section>
-            <img alt="Modern IT & Cloud Technologies" id="image-display"
+                </div>
+            </aside>
+            <section>
+                <img alt="Modern IT & Cloud Technologies" id="image-display"
                  src="https://atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png"
                  width="850">
-            <div id="images3">
-                <img alt="Modern Technologies"
+                <div id="images3">
+                    <img alt="Modern Technologies"
                      onclick="document.getElementById('image-display').src = 'https://www.twi-global.com/image-library/hero/istock-880444220-2048x1299.jpg';"
                      src="https://www.twi-global.com/image-library/hero/istock-880444220-2048x1299.jpg"
                      width="200">
-                <img alt="Global IT Network"
+                    <img alt="Global IT Network"
                      onclick="document.getElementById('image-display').src = 'http://www.bu.edu/online/files/2016/04/computer-networks.jpg';"
                      src="http://www.bu.edu/online/files/2016/04/computer-networks.jpg"
                      width="200">
-                <img alt="IT & Software"
+                    <img alt="IT & Software"
                      onclick="document.getElementById('image-display').src = 'https://files.simpatio.com.br/uploads/2018/12/software-odontologico.jpg';"
                      src="https://files.simpatio.com.br/uploads/2018/12/software-odontologico.jpg"
                      width="200">
-                <img alt="Modern City"
+                    <img alt="Modern City"
                      onclick="document.getElementById('image-display').src = 'https://dotwebz.com/wp-content/uploads/2016/10/Modern.jpg';"
                      src="https://dotwebz.com/wp-content/uploads/2016/10/Modern.jpg"
                      width="200">
-                <img alt="Modern Tech & AI"
+                    <img alt="Modern Tech & AI"
                      onclick="document.getElementById('image-display').src = 'https://blog.mmumullana.org/wp-content/uploads/2019/12/blog-image-for-Computer-Science.jpg';"
                      src="https://blog.mmumullana.org/wp-content/uploads/2019/12/blog-image-for-Computer-Science.jpg"
                      width="200">
-                <img alt="Modern Global Networking Infrastructure"
+                    <img alt="Modern Global Networking Infrastructure"
                      onclick="document.getElementById('image-display').src = 'https://www.lifewire.com/thmb/FmeKYLjqWRfxgCFYbz1hDqnTAiE=/2202x1361/filters:fill(auto,1)/GettyImages-730133317-5b2b315dba61770054a1497f.jpg';"
                      src="https://www.lifewire.com/thmb/FmeKYLjqWRfxgCFYbz1hDqnTAiE=/2202x1361/filters:fill(auto,1)/GettyImages-730133317-5b2b315dba61770054a1497f.jpg"
                      width="200">
-                <img alt="Advanced Technology"
+                    <img alt="Advanced Technology"
                      onclick="document.getElementById('image-display').src = 'https://searchnetworking.techtarget.com/visuals/searchUnifiedCommunications/understanding_unified_communications/unifiedcommunications_article_013.jpg';"
                      src="https://searchnetworking.techtarget.com/visuals/searchUnifiedCommunications/understanding_unified_communications/unifiedcommunications_article_013.jpg"
                      width="200">
-                <img alt="Modern Technologies"
+                    <img alt="Modern Technologies"
                      onclick="document.getElementById('image-display').src = 'https://www.twi-global.com/image-library/hero/istock-880444220-2048x1299.jpg';"
                      src="https://www.twi-global.com/image-library/hero/istock-880444220-2048x1299.jpg"
                      width="200">
-                <p id="image-btn1"
-                   onclick="document.getElementById('images3').style.display = 'none'; document.getElementById('images2').style.display = 'unset';">
-                    < </p>
-            </div>
-        </section>
-        <!------------------------------------------------------------- -- Content - Text2 -- --------------------------------------------->
-        <div id="text2">
-            <h3>Benefits of Learning Coding</h3>
-            <p> Learning coding empowers you to do many things you wouldn’t otherwise be able to
-                do. These things include hand-crafting your own websites, becoming a career
-                coder or even starting a technology business.
-                Most importantly, you’ll be able to understand the technology shaping your
-                world.
-                <br> You’ve undoubtedly heard or read somewhere that everyone needs to learn coding,
+                    <p id="image-btn1"
+                        onclick="document.getElementById('images3').style.display = 'none'; document.getElementById('images2').style.display = 'unset';">
+                        < </p>
+                </div>
+            </section>
+            <!------------------------------------------------------------- -- Content - Text2 -- --------------------------------------------->
+            <div id="text2">
+                <h3>Benefits of Learning Coding</h3>
+                <p> Learning coding empowers you to do many things you wouldn’t otherwise be able to
+                    do. These things include hand-crafting your own websites, becoming a career
+                    coder or even starting a technology business.
+                    Most importantly, you’ll be able to understand the technology shaping your
+                    world.
+                    <br> You’ve undoubtedly heard or read somewhere that everyone needs to learn coding,
                 right? Well, people say that for a reason!
                 Whether you’re looking for a career in the industry, starting a new hobby or
                 just wanting to understand technology, you can benefit from learning coding.
 
-                <br> Here are some of the things that learning coding can empower you to do:
-            <ul>
-                <li> Make Your Own Website</li>
-                <li> Become a Career Coder</li>
-                <li> Start a Business</li>
-                <li> Understand How Computers Work</li>
-            </ul>
-            </p>
-            <cite> - <a href="https://www.codeconquest.com/what-is-coding/benefits/">https://www.codeconquest.com/what-is-coding/benefits/</a></cite>
-        </div>
-    </section>
-    <!-------------------------------------------------------------- -MAIN- Element2 -------------------------------------------------->
-    <aside class="aside2">
-        <h3>Site Element-2!</h3>
-        <p>See the sites code with <b>Developer Tools</b> (in the browser settings), or view the
-            site files with a word editor of your choice.
-            This shows all the HTML code elements, you can see for yourself in this way, how the
-            site programming works.</p>
-        <img alt="Computer Coding"
+                    <br> Here are some of the things that learning coding can empower you to do:
+                <ul>
+                    <li> Make Your Own Website</li>
+                    <li> Become a Career Coder</li>
+                    <li> Start a Business</li>
+                    <li> Understand How Computers Work</li>
+                </ul>
+                </p>
+                <cite> - <a href="https://www.codeconquest.com/what-is-coding/benefits/">https://www.codeconquest.com/what-is-coding/benefits/</a></cite>
+            </div>
+        </section>
+        <!-------------------------------------------------------------- -MAIN- Element2 -------------------------------------------------->
+        <aside class="aside2">
+            <h3>Site Element-2!</h3>
+            <p>See the sites code with <b>Developer Tools</b> (in the browser settings), or view the
+                site files with a word editor of your choice.
+                This shows all the HTML code elements, you can see for yourself in this way, how the
+                site programming works.</p>
+            <img alt="Computer Coding"
              src="https://krannert.purdue.edu/centers/dcmme/images/projects/code.jpg"
              width="150">
-        <address>
-            - an address or contact information here -
-        </address>
-        <br>
-        <cite>Site Author: Stefano</cite>
-    </aside>
-</main>
+            <address>
+                - an address or contact information here -
+            </address>
+            <br>
+            <cite>Site Author: Stefano</cite>
+        </aside>
+    </main>
 
-<!--------------------------------------------------------------------- -MAIN- Footer ------------------------------------------------>
-<!--------------------------------------------------------------------------------------------------------------------------->
-<footer>
-    <p>Hope you enjoyed the site designs, these projects were helped using the <a
-            href="https://www.w3schools.com/">W3 Schools
-        Website</a> - <i>Tutorials</i>.
-        <br>
+    <!--------------------------------------------------------------------- -MAIN- Footer ------------------------------------------------>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <p>Hope you enjoyed the site designs, these projects were helped using the <a
+                href="https://www.w3schools.com/">W3 Schools
+                Website</a> - <i>Tutorials</i>.
+            <br>
         You can also visit my HTML Guide Website at: <a
                 href="https://sdesign22.github.io/html-guide.io/">https://sdesign22.github.io/html-guide.io/</a>
-    </p>
-</footer>
+        </p>
+    </footer>
 
 </body>
 <script>
@@ -459,4 +483,5 @@
     }
     menu.addEventListener("click", ToggleMenu);
 </script>
+
 </html>
