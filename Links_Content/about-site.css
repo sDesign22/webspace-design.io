@@ -1,74 +1,73 @@
     /**************************** Design-Links ****************************/
     nav {
-    	background: repeating-linear-gradient(25deg, transparent, white 25% 50%, blue, transparent 85%, silver);
-    	margin: auto;
-    	padding: 2% 2% 0;
-    	border: double;
-    	border-radius: 10%;
-    	font-family: "Trebuchet MS", Helvetica, sans-serif;
-    	font-weight: bold;
+        background: repeating-linear-gradient(25deg, transparent, white 25% 50%, blue, transparent 85%, silver);
+        margin: auto;
+        padding: 2% 2% 0;
+        border: double;
+        border-radius: 10%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
     }
 
     nav>ul {
-    	display: flex;
-    	flex-direction: row;
-    	margin-top: 2.5%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.5%;
     }
 
     nav ul>li {
         background: linear-gradient(25deg, white, silver);
-    	margin: auto;
-    	padding: 1% 4%;
-    	border: .2em ridge black;
-    	border-radius: 4%;
-    	box-shadow: 4px 5px 10px -2px;
-    	transition: .2s ease-in;
+        margin: auto;
+        padding: 1% 4%;
+        border: .2em ridge black;
+        border-radius: 4%;
+        box-shadow: 4px 5px 10px -2px;
+        transition: .2s ease-in;
     }
 
     nav:hover ul li,
     nav:hover a {
-    	background: silver;
-    	color: blue;
-    	margin: auto;
-    	transition: .25s ease-in;
-    	border-color: silver;
+        background: silver;
+        color: blue;
+        margin: auto;
+        transition: .25s ease-in;
+        border-color: silver;
     }
 
     nav ul>li:hover,
     nav a:hover {
-    	background: linear-gradient(-100deg, silver 59.75%, transparent);
-    	color: green;
-    	border-color: white;
-    	border-radius: 8px;
+        background: linear-gradient(-100deg, silver 59.75%, transparent);
+        color: green;
+        border-color: white;
+        border-radius: 8px;
     }
 
     nav li>a {
-    	color: unset;
-    	margin: auto;
-    	text-decoration: none;
-
+        color: unset;
+        margin: auto;
+        text-decoration: none;
     }
 
-    nav > a {
-    	padding: 1% 4%;
-    	border: .2em ridge black;
-    	border-radius: 4%;
-    	box-shadow: 4px 5px 10px -2px;
-    	text-decoration: none;
-    	transition: .2s ease-in;
+    nav>a {
+        padding: 1% 4%;
+        border: .2em ridge black;
+        border-radius: 4%;
+        box-shadow: 4px 5px 10px -2px;
+        text-decoration: none;
+        transition: .2s ease-in;
     }
 
     /******************************** ** Main ** ***************************************/
     main {
-        background: conic-gradient(from 82deg, blue, transparent 50%, black , transparent 70%);
+        background: conic-gradient(from 82deg, blue, transparent 50%, black, transparent 70%);
         border: thick outset;
     }
 
     main img {
-        float:right;
+        float: right;
         margin: 4% 4.5% 1%;
         padding: 1% 2%;
-        border: thick outset blue ;
+        border: thick outset blue;
         border-radius: 10px;
         box-shadow: -2px 5px 8px 5px blue;
     }
@@ -78,9 +77,9 @@
         overflow: auto;
         margin: 5% 2.5%;
         padding: 15% 4%;
-        border-top: 1em groove ;
-        border-bottom: 1em groove ;
-        border-left: thick outset blue ;
+        border-top: 1em groove;
+        border-bottom: 1em groove;
+        border-left: thick outset blue;
         border-radius: 10%;
         font-size: 1.2em;
         line-height: 1.5;
@@ -95,7 +94,7 @@
     }
 
     .section2 h3 {
-        background: conic-gradient(white, transparent 50%, black , transparent 70%);
+        background: conic-gradient(white, transparent 50%, black, transparent 70%);
         margin: 10% 20%;
         padding: 2%;
         border: groove;
@@ -103,6 +102,7 @@
         font-size: 1.8em;
         font-family: monospace;
     }
+
     .section2 h4 {
         background: linear-gradient(to top left, white, transparent 50%, black, transparent);
         margin: 4% 28% 1%;
@@ -112,6 +112,7 @@
         font-size: 1.4em;
         font-family: monospace;
     }
+
     .section2 p {
         background: linear-gradient(to bottom right, white 50%, transparent);
         margin: 1% 10%;
