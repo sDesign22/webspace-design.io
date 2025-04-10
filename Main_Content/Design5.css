@@ -60,8 +60,8 @@
 
     #design-image:hover {
         width: 90vw;
-        padding: 2%;
         margin-bottom: 8%;
+        padding: 2%;
         border-radius: 20px;
         font-size: 110%;
         font-family: 'Courier New', monospace;
@@ -329,9 +329,9 @@
     /**************************** * Main - Footer ****************************/
     footer {
         width: 90%;
+        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
         margin: 2% auto;
         padding: 2% 0;
-        background: linear-gradient(125deg, red, transparent, green, transparent, blue);
         border: .5em ridge;
         border-radius: 50%;
     }
