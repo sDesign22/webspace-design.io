@@ -147,7 +147,7 @@
     }
 
     #menu-links {
-        position: relative;
+    	position: relative;
     	left: 14%;
     	transition: .5s;
     }
